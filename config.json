@@ -1,0 +1,21 @@
+{
+  "Application": {
+    "LogLevel": "debug",
+    "ProcessPipelineSize": 1,
+    "BulkInsert": true,
+    "BulkInsertSize": 5,
+    "BulkInsertInterval": 5
+  },
+  "Datasource": [
+    {
+      "name": "random-data-api",
+      "type": "http",
+      "transformer": "random-data-api",
+      "source": "https://random-data-api.com/api/users/random_user"
+    }
+  ],
+  "Database": {
+    "type": "postgresql",
+    "ConnectionString": "postgres://postgres:mysecretpassword@localhost:5432/etl_sample"
+  }
+}
