@@ -1,6 +1,6 @@
 module github.com/awcjack/ETL-sample
 
-go 1.21.0
+go 1.21
 
 require (
 	github.com/jackc/pgx/v5 v5.5.1
